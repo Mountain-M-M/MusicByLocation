@@ -8,9 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var locationHandler = LocationHandler()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            List {
+                
+                Text("Country: \(locationHandler.lastKnownCountry)")
+                    .padding()
+                
+                Text("City: \(locationHandler.lastKnownLocation)")
+                    .padding()
+
+                Text("Postcode: \(locationHandler.lastKnownPostcode)")
+                    .padding()
+                
+                Text("Country Code: \(locationHandler.lastKnownCountryCode)")
+                    .padding()
+                
+                Text("Administrative Area: \(locationHandler.lastKnownAdministrativeArea)")
+                    .padding()
+
+            }
+            Spacer()
+            Button("Find Music", action: {
+                locationHandler.requestLocation()
+            })
+        }.onAppear( perform: {
+            locationHandler.requestAuthorisation()
+        })
     }
 }
 

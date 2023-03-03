@@ -14,6 +14,7 @@
 		8500E6DB29B113130051F59C /* MusicByLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8500E6DA29B113130051F59C /* MusicByLocationTests.swift */; };
 		8500E6E529B113130051F59C /* MusicByLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8500E6E429B113130051F59C /* MusicByLocationUITests.swift */; };
 		8500E6E729B113130051F59C /* MusicByLocationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8500E6E629B113130051F59C /* MusicByLocationUITestsLaunchTests.swift */; };
+		8500E6F429B113B90051F59C /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8500E6F329B113B90051F59C /* LocationHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		8500E6E029B113130051F59C /* MusicByLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicByLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8500E6E429B113130051F59C /* MusicByLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicByLocationUITests.swift; sourceTree = "<group>"; };
 		8500E6E629B113130051F59C /* MusicByLocationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicByLocationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8500E6F329B113B90051F59C /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		8500E6F529B115590051F59C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,7 @@
 		8500E6C829B113100051F59C /* MusicByLocation */ = {
 			isa = PBXGroup;
 			children = (
+				8500E6F529B115590051F59C /* Info.plist */,
 				8500E6C929B113100051F59C /* MusicByLocationApp.swift */,
 				8500E6CB29B113100051F59C /* ContentView.swift */,
 				8500E6CD29B113120051F59C /* Assets.xcassets */,
@@ -105,6 +109,7 @@
 		8500E6CF29B113120051F59C /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				8500E6F329B113B90051F59C /* LocationHandler.swift */,
 				8500E6D029B113120051F59C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -257,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8500E6F429B113B90051F59C /* LocationHandler.swift in Sources */,
 				8500E6CC29B113100051F59C /* ContentView.swift in Sources */,
 				8500E6CA29B113100051F59C /* MusicByLocationApp.swift in Sources */,
 			);
@@ -420,6 +426,7 @@
 				DEVELOPMENT_TEAM = 6RF82GHTPV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicByLocation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +456,7 @@
 				DEVELOPMENT_TEAM = 6RF82GHTPV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicByLocation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
