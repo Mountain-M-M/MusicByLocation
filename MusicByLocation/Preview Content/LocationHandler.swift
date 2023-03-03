@@ -47,6 +47,7 @@ class LocationHandler: NSObject, CLLocationManagerDelegate, ObservableObject {
             })
         }
     }
+    
 
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         self.lastKnownCountry = "Error finding country"

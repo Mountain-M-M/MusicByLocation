@@ -27,6 +27,7 @@ struct ContentView: View {
                 
                 Text("Administrative Area: \(locationHandler.lastKnownAdministrativeArea)")
                     .padding()
+                
 
             }
             Spacer()
